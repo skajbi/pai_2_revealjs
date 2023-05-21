@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js – The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h3>Ćwiczenia z programowania aplikacji internetowych </h3>
+				<p>
+					<small>Stworzone przez Agnieszka Anastaziuk</small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Opis ćwiczenia</h2>
+				<p>
+					Slajdy zostały stworzone przy pomocy framework'u
+					<a href="https://github.com/hakimel/reveal.js" target="_blank">revealjs</a>
+
+				</p>
+			</section>
+
+			<section>
+				<h2>Nie udało Ci się znaleźć tego czego szukasz?</h2>
+				<p>
+					Link do najlepszej przeglądarki:
+					<a href="https://google.com" target="_blank">google.com</a>
+				</p>
+			</section>
+
+			<section data-visibility="hidden">
+				<h2>Ukryty slajd</h2>
+				<p>
+					Coś czego nie chcemy pokazać użytkownikowi
+				</p>
+			</section>
+
+			<section data-auto-animate>
+				<h2 data-id="code-title">Przykład formatowania</h2>
+				<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+			</section>
+
+
+		</div>
+
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
+</html>
